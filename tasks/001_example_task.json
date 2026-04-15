@@ -1,0 +1,13 @@
+{
+  "id": "001",
+  "title": "Flatten Markdown Output Layout",
+  "status": "done",
+  "priority": "high",
+  "description": "Move all generated Markdown files into one directory and keep links valid after flattening.",
+  "success_criteria": [
+    "All Markdown outputs are emitted into a single target directory",
+    "All internal links continue to resolve after flattening",
+    "The overview page is named index.md"
+  ],
+  "notes": ""
+}

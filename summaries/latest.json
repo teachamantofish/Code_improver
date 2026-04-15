@@ -1,0 +1,26 @@
+{
+  "all_passed": true,
+  "score": 1.0,
+  "metric_name": "score",
+  "metric_direction": "higher",
+  "passed": 31,
+  "failed": 0,
+  "total": 31,
+  "details": [
+    {
+      "name": "markdown_exists",
+      "passed": true,
+      "detail": "markdown dir: /home/ben/GIT/fm_html_md/markdown"
+    },
+    {
+      "name": "markdown_has_files",
+      "passed": true,
+      "detail": "markdown files: 20"
+    },
+    {
+      "name": "index_md_exists",
+      "passed": true,
+      "detail": "index candidates: ['markdown/index.md']"
+    }
+  ]
+}

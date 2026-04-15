@@ -1,0 +1,4 @@
+timestamp	task_id	task_title	attempt_status	decision	metric_name	metric_value	passed	failed	run_dir	summary_path	description
+20260413T001535Z	001	Flatten Markdown Output Layout	completed	keep	score	1.0	6	0	improvement/artifacts/20260413T001535Z_001	improvement/artifacts/20260413T001535Z_001/summary.json	flatten markdown output layout
+20260413T205500Z	004	Clean up heading anchors.	completed	keep	score	1.0	17	0			task 004 heading slug cleanup
+20260413T211500Z	005	Remove raw HTML anchors from Markdown output	completed	keep	score	1.0	19	0			task 005 remove raw html anchors
