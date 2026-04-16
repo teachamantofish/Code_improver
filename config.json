@@ -1,15 +1,16 @@
 {
-  "project_name": "my_project_name",
-  "task_dir": "improvement/tasks",
-  "artifacts_dir": "improvement/artifacts",
-  "summary_dir": "improvement/summaries",
-  "results_file": "improvement/results.tsv",
-  "runner_commands": [
-    "env UV_CACHE_DIR=/tmp/uv-cache uv run clean_html.py",
-    "env UV_CACHE_DIR=/tmp/uv-cache uv run html_to_md.py"
-  ],
+  "project_name": "vani_dashboard",
+  "loop_mode": "task",
+  "full_loop_every": 5,
+  "task_dir": "Code_Improver/tasks",
+  "artifacts_dir": "Code_Improver/artifacts",
+  "summary_dir": "Code_Improver/summaries",
+  "results_file": "Code_Improver/results.tsv",
+  "runner_commands": [],
   "eval_commands": [
-    "env UV_CACHE_DIR=/tmp/uv-cache uv run improvement/evals/html_md_eval.py"
+    "python Code_Improver/evals/dashboard_eval.py",
+    "python Code_Improver/evals/browser_eval.py",
+    "python Code_Improver/evals/charts_sync_eval.py"
   ],
   "primary_metric": {
     "field": "score",

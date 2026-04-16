@@ -1,0 +1,34 @@
+{
+  "id": "001",
+  "title": "Integrate help drawer into index.html",
+  "status": "done",
+  "priority": "high",
+  "description": "Wire up the help-drawer.html drawer UI into index.html so clicking the ? button opens a slide-in help drawer. The drawer logic and CSS must be extracted into assets/js/help-drawer.js and added to assets/css/style.css respectively. The standalone help-drawer.html file is left as-is.",
+  "success_criteria": [
+    "assets/js/help-drawer.js exists and is non-empty",
+    "index.html references assets/js/help-drawer.js via script tag",
+    "index.html contains an element with class 'drawer'",
+    "index.html contains an element with class 'overlay'",
+    "index.html has id='help-btn'",
+    "help-drawer.js defines openHelp function",
+    "help-drawer.js defines closeHelp function",
+    "help-btn is wired to call HelpDrawer.open (onclick in index.html or addEventListener in help-drawer.js)",
+    "help-drawer.js handles Escape key to close drawer",
+    "help-drawer.js implements Tab focus trap inside drawer",
+    "assets/css/style.css contains .drawer CSS rule"
+  ],
+  "evals": [
+    "dashboard_eval.py: help_drawer_js_exists",
+    "dashboard_eval.py: index_references_help_drawer_js",
+    "dashboard_eval.py: index_has_drawer_element",
+    "dashboard_eval.py: index_has_overlay_element",
+    "dashboard_eval.py: index_has_help_btn",
+    "dashboard_eval.py: help_js_defines_openHelp",
+    "dashboard_eval.py: help_js_defines_closeHelp",
+    "dashboard_eval.py: help_btn_wired_to_open_help",
+    "dashboard_eval.py: help_js_handles_escape_key",
+    "dashboard_eval.py: help_js_implements_focus_trap",
+    "dashboard_eval.py: style_css_has_drawer_rule"
+  ],
+  "notes": "sl-icon-button onclick uses window.HelpDrawer.open() matching the settings-btn pattern. playwright-cli click does not trigger onclick on Shoelace custom elements (shadow DOM boundary); JS .click() is used in browser_eval.py instead."
+}

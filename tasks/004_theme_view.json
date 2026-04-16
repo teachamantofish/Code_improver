@@ -1,0 +1,105 @@
+{
+  "id": "004",
+  "title": "Populate a theme tab with selected data from the file view and display table and charts",
+  "status": "todo",
+  "priority": "high",
+  "description": "When a user defines data in the file view, selected data via checkboxesshould auto-populate the theme tab and display a table and charts.",
+  "success_criteria": [
+    ""
+  ],
+  "evals": [
+    "tbd: function name with binary eval"
+  ],
+  "notes": ""
+}
+
+
+I need a new feature and associated evals/tests. Help me think of binary tests we can run on task @Code_Improver/tasks/004_theme_view.json . 
+
+A new theme button will be added to the file view tab.
+When the user selects 0 files in the file view tab, the theme button will be disabled. 
+When the user selects 0 files in the file view tab, an alert appears "Please select at least 1 file"
+When the user selects 1-N files in the file view tab, the theme button will be enabled.
+When the user clicks the theme button, the theme view tab will be displayed.
+The theme view tab displays 
+
+
+
+I'm going to need to process @themes.csv in a manner similar to the way I process other raw_csv files. The data need to be cleaned up for display in a web UI.  it will remain CSV. 
+
+As you can see from csv_organizer.py and /clean_csv, files are processed and placed in subdirs based on product name. 
+
+I think the theme data can be a separate data set. It's displayed on a different tab
+
+Search is only be product. Users pick a product and can see 
+- Theme name
+- Theme description
+- List of pages with that theme name. 
+
+
+Data structure: keep CSV as-is. Semicolons are fine — DataTables child rows parse them client-side. No JSON, no extra rows.
+
+The accordion pattern uses DataTables row.child() API — built-in, no extra library. The expand toggle lives inside the theme_name cell render:
+
+
+[ ▶  Replace 'Adobe Reader' with...  ][ description... ]
+   ↓ click
+[ ▼  Replace 'Adobe Reader' with...  ][ description... ]
+     • https://helpx.adobe.com/...
+     • https://helpx.adobe.com/...
+affected_pages stays hidden (visible: false) but searchable. The child row renders URLs as a <ul> on expand.
+
+One small datatables.js fix needed first. Line 1294 does Object.assign(dataTableOptions, rest) which overwrites the internal columnDefs array if you pass your own. It should concat instead:
+
+Read datatables.js (lines 1289-1300)
+Edit datatables.js
+Added 3 lines
+Now the themes fragmentConfig can pass columnDefs and initComplete without blowing away internal defs. Here's what the themes config will look like (for when you wire it up):
+
+
+var themesFragmentConfig = {
+    tableSelector: '#tab5-fragment #tab5-table',
+    statusSelector: '#tab5-fragment #tab5-status',
+    checkBoxes: false,
+    printPDF: false, exportExcel: false, emailButton: false, jiraButton: false,
+    colVis: true,
+    dataTableOptions: {
+        columnDefs: [
+            {
+                targets: 3,          // affected_pages — hide but keep searchable
+                visible: false,
+                searchable: true
+            },
+            {
+                targets: 1,          // theme_name — prepend toggle arrow
+                render: function (data, type) {
+                    if (type !== 'display') return data;
+                    return '<span class="themes-row-toggle" title="Show affected pages" '
+                         + 'style="cursor:pointer;user-select:none;margin-right:6px;">▶</span>'
+                         + data;
+                }
+            }
+        ],
+        initComplete: function (settings) {
+            var api = new jQuery.fn.dataTable.Api(settings);
+            jQuery(api.table().body()).on('click', '.themes-row-toggle', function () {
+                var row = api.row(jQuery(this).closest('tr'));
+                var toggle = jQuery(this);
+                if (row.child.isShown()) {
+                    row.child.hide();
+                    toggle.text('▶');
+                } else {
+                    var pages = row.data()[3] || '';   // affected_pages col
+                    var urls = pages.split(';').map(function(u){ return u.trim(); }).filter(Boolean);
+                    var html = '<ul class="themes-pages-list" style="margin:4px 0 4px 2em;padding:0">'
+                        + urls.map(function(u){
+                            return '<li><a href="' + u + '" target="_blank">' + u + '</a></li>';
+                          }).join('')
+                        + '</ul>';
+                    row.child(html).show();
+                    toggle.text('▼');
+                }
+            });
+        }
+    }
+};

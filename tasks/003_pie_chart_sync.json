@@ -1,0 +1,34 @@
+{
+  "id": "003",
+  "title": "Sync pie charts on slice filter",
+  "status": "done",
+  "priority": "high",
+  "description": "When a user clicks a pie slice, the table filters correctly but the other two pie charts are not updated. All three pie charts should stay in sync with the data currently displayed in the table. Clicking a slice in any chart should rebuild the other two charts using only the filtered rows.",
+  "success_criteria": [
+    "charts.js stores the current dataset in _currentData when buildCharts is called",
+    "charts.js defines a syncNonActiveCharts(activeChartId) function",
+    "applySliceFilter calls syncNonActiveCharts after refreshDt",
+    "syncNonActiveCharts rebuilds non-active charts using DataTable filtered rows",
+    "charts.js exposes Charts.getLastBuiltData(divId) returning {colHeader, data}",
+    "charts.js exposes Charts.applyFilter(colHeader, rawValues, category, chartId) for testing",
+    "After clicking a priority slice: action and author charts total equals filtered row count",
+    "After clicking an action slice: priority and author charts total equals filtered row count",
+    "After clicking an author slice: priority and action charts total equals filtered row count",
+    "No console errors during filter and sync operations"
+  ],
+  "evals": [
+    "dashboard_eval.py: charts_js_stores_current_data",
+    "dashboard_eval.py: charts_js_has_sync_function",
+    "dashboard_eval.py: charts_js_calls_sync_after_refresh",
+    "dashboard_eval.py: charts_js_exposes_getLastBuiltData",
+    "dashboard_eval.py: charts_js_exposes_applyFilter",
+    "charts_sync_eval.py: charts_init_succeeds",
+    "charts_sync_eval.py: priority_chart_data_loaded",
+    "charts_sync_eval.py: action_chart_data_loaded",
+    "charts_sync_eval.py: author_chart_data_loaded",
+    "charts_sync_eval.py: priority_and_action_sync_after_author_filter",
+    "charts_sync_eval.py: priority_and_author_sync_after_action_filter",
+    "charts_sync_eval.py: no_console_errors_during_sync"
+  ],
+  "notes": "syncNonActiveCharts gets filtered rows from DataTable.rows({filter:'applied'}).data() after refreshDt(). DataTable stores display values, so row[colIdx] returns values that buildPriorityChart etc. can process correctly. The clicked chart is NOT rebuilt — it keeps its active slice highlighted. Only the other two rebuild."
+}

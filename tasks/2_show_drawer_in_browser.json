@@ -1,0 +1,38 @@
+{
+  "id": "002",
+  "title": "Verify help drawer works in browser",
+  "status": "done",
+  "priority": "high",
+  "description": "Browser-level verification that the help drawer opens, behaves correctly, and produces no console errors. All checks must fail before the feature is implemented and pass after.",
+  "success_criteria": [
+    "Browser opens the dashboard without error",
+    ".drawer element exists in live DOM",
+    ".overlay element exists in live DOM",
+    "#help-search input exists in DOM",
+    ".close-btn exists inside .drawer",
+    ".drawer-list exists in DOM",
+    "No console errors on page load",
+    "Clicking #help-btn adds class 'open' to .drawer",
+    "Overlay gains class 'open' when drawer is open",
+    "#help-search input is focused after drawer opens",
+    "No console errors after opening drawer",
+    "Pressing Escape removes class 'open' from .drawer",
+    "Clicking the overlay removes class 'open' from .drawer"
+  ],
+  "evals": [
+    "browser_eval.py: browser_opens",
+    "browser_eval.py: drawer_element_in_dom",
+    "browser_eval.py: overlay_element_in_dom",
+    "browser_eval.py: drawer_has_search_input",
+    "browser_eval.py: drawer_has_close_button",
+    "browser_eval.py: drawer_has_topic_list",
+    "browser_eval.py: no_console_errors_on_load",
+    "browser_eval.py: drawer_opens_on_help_btn_click",
+    "browser_eval.py: overlay_visible_when_drawer_open",
+    "browser_eval.py: search_input_focused_after_open",
+    "browser_eval.py: no_console_errors_after_open",
+    "browser_eval.py: escape_key_closes_drawer",
+    "browser_eval.py: overlay_click_closes_drawer"
+  ],
+  "notes": "Uses JS .click() instead of playwright-cli click for Shoelace sl-icon-button — playwright-cli pierces shadow DOM and misses the host element's onclick attribute."
+}

@@ -1,0 +1,66 @@
+{
+  "all_passed": true,
+  "score": 1.0,
+  "metric_name": "score",
+  "metric_direction": "higher",
+  "passed": 11,
+  "failed": 0,
+  "total": 11,
+  "details": [
+    {
+      "name": "browser_opens",
+      "passed": true,
+      "detail": "ok"
+    },
+    {
+      "name": "charts_api_present",
+      "passed": true,
+      "detail": "### Result\n\"object\"\n### Ran Playwright code\n```js\nawait (async page => { return await page.evaluate("
+    },
+    {
+      "name": "charts_exposes_getLastBuiltData",
+      "passed": true,
+      "detail": "### Result\n\"function\"\n### Ran Playwright code\n```js\nawait (async page => { return await page.evaluat"
+    },
+    {
+      "name": "charts_exposes_applyFilter",
+      "passed": true,
+      "detail": "### Result\n\"function\"\n### Ran Playwright code\n```js\nawait (async page => { return await page.evaluat"
+    },
+    {
+      "name": "charts_init_succeeds",
+      "passed": true,
+      "detail": "### Result\n{\"ok\":true}\n### Ran Playwright code\n```js\nawait (async page => { return await page.evaluate(async () => { if (!window.Charts || typeof window.Charts.init !== 'function') return {ok: false, reason: 'Charts not found'}; await window.Charts.init(); await new Promise(r => setTimeout(r, 2500))"
+    },
+    {
+      "name": "priority_chart_data_loaded",
+      "passed": true,
+      "detail": "### Result\ntrue\n### Ran Playwright code\n```js\nawait (async page => { return await page.evaluate(() ="
+    },
+    {
+      "name": "action_chart_data_loaded",
+      "passed": true,
+      "detail": "### Result\ntrue\n### Ran Playwright code\n```js\nawait (async page => { return await page.evaluate(() ="
+    },
+    {
+      "name": "author_chart_data_loaded",
+      "passed": true,
+      "detail": "### Result\ntrue\n### Ran Playwright code\n```js\nawait (async page => { return await page.evaluate(() ="
+    },
+    {
+      "name": "priority_and_action_sync_after_author_filter",
+      "passed": true,
+      "detail": "{'fullPriorityTotal': 329, 'tableCountAfterAuthorFilter': 147, 'priorityTotalAfterAuthorFilter': 147, 'actionTotalAfterAuthorFilter': 147, 'priorityCategoriesValid': True, 'actionCategoriesValid': True, 'passed': True}"
+    },
+    {
+      "name": "priority_and_author_sync_after_action_filter",
+      "passed": true,
+      "detail": "{'fullPriorityTotal': 329, 'tableCountAfterActionFilter': 31, 'priorityTotalAfterActionFilter': 31, 'authorTotalAfterActionFilter': 31, 'priorityCategoriesValid': True, 'passed': True}"
+    },
+    {
+      "name": "no_console_errors_during_sync",
+      "passed": true,
+      "detail": "clean"
+    }
+  ]
+}

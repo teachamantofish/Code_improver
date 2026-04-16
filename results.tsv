@@ -1,4 +1,5 @@
 timestamp	task_id	task_title	attempt_status	decision	metric_name	metric_value	passed	failed	run_dir	summary_path	description
-20260413T001535Z	001	Flatten Markdown Output Layout	completed	keep	score	1.0	6	0	improvement/artifacts/20260413T001535Z_001	improvement/artifacts/20260413T001535Z_001/summary.json	flatten markdown output layout
-20260413T205500Z	004	Clean up heading anchors.	completed	keep	score	1.0	17	0			task 004 heading slug cleanup
-20260413T211500Z	005	Remove raw HTML anchors from Markdown output	completed	keep	score	1.0	19	0			task 005 remove raw html anchors
+20260414T204000Z	001	Integrate help drawer into index.html	completed	keep	score	1.0	11	0		Code_Improver/summaries/latest.json	static evals: all 11 pass
+20260414T204500Z	002	Verify help drawer works in browser	completed	keep	score	1.0	13	0		Code_Improver/summaries/latest_browser.json	browser evals: all 13 pass
+20260414T210000Z	003	Sync pie charts on slice filter	completed	keep	score	1.0	27	0		Code_Improver/summaries/latest_charts_sync.json	static 16/16 + browser 11/11 pass; syncNonActiveCharts using DataTable filtered rows
+20260414T213000Z	003b	Fix sync column-index bugs (URL/number categories)	completed	keep	score	1.0	27	0		Code_Improver/summaries/latest_charts_sync.json	DataTable checkbox col offset bug; use rows().every()+index() to map back to _currentData.rows

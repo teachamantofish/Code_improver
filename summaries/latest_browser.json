@@ -1,0 +1,76 @@
+{
+  "all_passed": true,
+  "score": 1.0,
+  "metric_name": "score",
+  "metric_direction": "higher",
+  "passed": 13,
+  "failed": 0,
+  "total": 13,
+  "details": [
+    {
+      "name": "browser_opens",
+      "passed": true,
+      "detail": "ok"
+    },
+    {
+      "name": "drawer_element_in_dom",
+      "passed": true,
+      "detail": "looking for .drawer element in live DOM"
+    },
+    {
+      "name": "overlay_element_in_dom",
+      "passed": true,
+      "detail": "looking for .overlay element in live DOM"
+    },
+    {
+      "name": "drawer_has_search_input",
+      "passed": true,
+      "detail": "looking for #help-search input in DOM"
+    },
+    {
+      "name": "drawer_has_close_button",
+      "passed": true,
+      "detail": "looking for .close-btn inside .drawer"
+    },
+    {
+      "name": "drawer_has_topic_list",
+      "passed": true,
+      "detail": "looking for .drawer-list in DOM"
+    },
+    {
+      "name": "no_console_errors_on_load",
+      "passed": true,
+      "detail": "clean"
+    },
+    {
+      "name": "drawer_opens_on_help_btn_click",
+      "passed": true,
+      "detail": "### Result\ntrue\n### Ran Playwright code\n```js\nawait (async page => { return await page.evaluate(() => { const d = document.querySelector('.drawer'); return d ? d.classList.contains('open') : false; })"
+    },
+    {
+      "name": "overlay_visible_when_drawer_open",
+      "passed": true,
+      "detail": "### Result\ntrue\n### Ran Playwright code\n```js\nawait (async page => { return await page.evaluate(() => { const o = document.querySelector('.overlay'); return o ? o.classList.contains('open') : false; }"
+    },
+    {
+      "name": "search_input_focused_after_open",
+      "passed": true,
+      "detail": "### Result\ntrue\n### Ran Playwright code\n```js\nawait (async page => { return await page.evaluate(() => { return document.activeElement && document.activeElement.id === 'help-search'; }); })(page);\n```"
+    },
+    {
+      "name": "no_console_errors_after_open",
+      "passed": true,
+      "detail": "clean"
+    },
+    {
+      "name": "escape_key_closes_drawer",
+      "passed": true,
+      "detail": "### Result\ntrue\n### Ran Playwright code\n```js\nawait (async page => { return await page.evaluate(() => { const d = document.querySelector('.drawer'); return d ? !d.classList.contains('open') : false; }"
+    },
+    {
+      "name": "overlay_click_closes_drawer",
+      "passed": true,
+      "detail": "### Result\ntrue\n### Ran Playwright code\n```js\nawait (async page => { return await page.evaluate(() => { const d = document.querySelector('.drawer'); return d ? !d.classList.contains('open') : false; }"
+    }
+  ]
+}

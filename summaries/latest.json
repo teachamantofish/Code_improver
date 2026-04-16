@@ -3,24 +3,89 @@
   "score": 1.0,
   "metric_name": "score",
   "metric_direction": "higher",
-  "passed": 31,
+  "passed": 16,
   "failed": 0,
-  "total": 31,
+  "total": 16,
   "details": [
     {
-      "name": "markdown_exists",
+      "name": "help_drawer_js_exists",
       "passed": true,
-      "detail": "markdown dir: /home/ben/GIT/fm_html_md/markdown"
+      "detail": "path: C:\\GIT\\vani_dashboard\\docs\\assets\\js\\help-drawer.js"
     },
     {
-      "name": "markdown_has_files",
+      "name": "index_references_help_drawer_js",
       "passed": true,
-      "detail": "markdown files: 20"
+      "detail": "looking for 'help-drawer.js' script tag in index.html"
     },
     {
-      "name": "index_md_exists",
+      "name": "index_has_drawer_element",
       "passed": true,
-      "detail": "index candidates: ['markdown/index.md']"
+      "detail": "looking for element with class 'drawer' in index.html"
+    },
+    {
+      "name": "index_has_overlay_element",
+      "passed": true,
+      "detail": "looking for element with class 'overlay' in index.html"
+    },
+    {
+      "name": "index_has_help_btn",
+      "passed": true,
+      "detail": "looking for id=\"help-btn\" in index.html"
+    },
+    {
+      "name": "help_js_defines_openHelp",
+      "passed": true,
+      "detail": "looking for openHelp in help-drawer.js"
+    },
+    {
+      "name": "help_js_defines_closeHelp",
+      "passed": true,
+      "detail": "looking for closeHelp in help-drawer.js"
+    },
+    {
+      "name": "help_btn_wired_to_open_help",
+      "passed": true,
+      "detail": "looking for HelpDrawer.open onclick in index.html or addEventListener in help-drawer.js"
+    },
+    {
+      "name": "help_js_handles_escape_key",
+      "passed": true,
+      "detail": "looking for Escape keydown handler in help-drawer.js"
+    },
+    {
+      "name": "help_js_implements_focus_trap",
+      "passed": true,
+      "detail": "looking for Tab focus trap in help-drawer.js"
+    },
+    {
+      "name": "style_css_has_drawer_rule",
+      "passed": true,
+      "detail": "looking for .drawer rule in assets/css/style.css"
+    },
+    {
+      "name": "charts_js_stores_current_data",
+      "passed": true,
+      "detail": "looking for _currentData = data assignment in charts.js (buildCharts)"
+    },
+    {
+      "name": "charts_js_has_sync_function",
+      "passed": true,
+      "detail": "looking for syncNonActiveCharts function in charts.js"
+    },
+    {
+      "name": "charts_js_calls_sync_after_refresh",
+      "passed": true,
+      "detail": "looking for syncNonActiveCharts called after refreshDt in applySliceFilter"
+    },
+    {
+      "name": "charts_js_exposes_getLastBuiltData",
+      "passed": true,
+      "detail": "looking for getLastBuiltData export in charts.js"
+    },
+    {
+      "name": "charts_js_exposes_applyFilter",
+      "passed": true,
+      "detail": "looking for applyFilter in Charts public API"
     }
   ]
 }

@@ -1,6 +1,8 @@
 # Code Improvement Framework
 
-Starter prompt:  This project uses a universal improvement plan. I'm using a "Karpathy autoresearch-like" loop strategy to fix issues. The loop identifies the problem, fixes the problems one at a time, adds a binary eval, and loops until the eval passes. Then it moves to the next test. The goal is to create better code with each pass *without stopping* and continually add eval tests whenever a problem is found and fixed. 
+Read <root>/readme.md. This project uses a universal improvement plan-"autoresearch-like" loop strategy to fix issues. The loop identifies the problem, fixes the problems one at a time, adds a binary eval, and loops until the eval passes. Then it moves to the next test. The goal is to create better code with each pass *without stopping* and continually add eval tests whenever a problem is found and fixed. 
+
+We are developing an HTML dashboard. All dashboard code is under /docs/. You need only analyze and work in /Code_Improver/ and /docs/. We will primarily be using the console in Webview to find errors and create evals, but any other strategy is welcome. 
 
 **Note**: After you understand the process and the example files, respond that you are ready to start. If you have questions, ask.    
 
@@ -15,9 +17,9 @@ This directory contains a generic, project-local framework for iterative code im
   - All required checks pass
   - Targeted metric or issue count improves
 
-## Goal
+## Framework Goal
 
-Build a generic, reusable framework for improving any codebase one task at a time. The framework should be process-first rather than domain-first, so it can be reused for:
+This generic, reusable framework is designed to improve any codebase one task at a time. The framework is process-first rather than domain-first, so it can be reused for:
 
 - parsers
 - data pipelines
@@ -28,7 +30,7 @@ Build a generic, reusable framework for improving any codebase one task at a tim
 - automation scripts
 - model and prompt workflows
 
-The project-specific parts should be easy to swap out:
+The project-specific parts are easy to swap out and can be deleted if not needed:
 
 - target files or commands
 - task definitions
@@ -36,7 +38,7 @@ The project-specific parts should be easy to swap out:
 - acceptance policy
 - artifact selection
 
-## Core Idea
+## Core Framework Idea
 
 Generally follow a best-practices model-training implementation:
 
@@ -58,12 +60,14 @@ The framework should always answer:
 
 ## Universal Loop
 
+Loop scope is `task` by default. Only evals scoped to the active task run. Full project loop triggers on task completion or explicit flag.
+
 For every iteration:
 
 1. Select one task.
 2. Capture the current baseline.
 3. Run the project commands that produce the candidate output.
-4. Run all configured evals.
+4. Run evals scoped to the active task (micro loop) or all evals (full loop).
 5. Collect a machine-readable summary.
 6. Compare against the previous accepted result.
 7. Mark the attempt as `keep`, `discard`, or `crash`.
@@ -71,6 +75,47 @@ For every iteration:
 9. Move to the next task only after the current one is resolved.
 
 This loop should work regardless of whether the target is code quality, conversion quality, runtime speed, correctness, or output fidelity.
+
+## Loop Scope Modes
+
+Two modes control which evals run on each iteration:
+
+### Micro Task Loop (default)
+
+- Runs only evals tagged to the active task via its `evals` array
+- Fast iteration — skips unrelated eval scripts entirely
+- Terminal output: `RUNNING MICRO TASK LOOP`
+- Use during active fix/iteration on a single task
+
+### Full Project Loop
+
+- Runs all `eval_commands` from config — every eval script, every task
+- Catches regressions across the whole project
+- Terminal output: `RUNNING FULL TEST LOOP ON ALL TASKS`
+- Triggers automatically every `full_loop_every` runs (default: 5)
+- Force any time with `--full` flag or set `loop_mode: "full"` in config
+
+### Trigger Logic
+
+```
+run N % full_loop_every == 0  →  FULL TEST LOOP ON ALL TASKS
+run N % full_loop_every != 0  →  MICRO TASK LOOP
+--full flag                   →  FULL TEST LOOP ON ALL TASKS (override)
+loop_mode: "full" in config   →  always full
+```
+
+### Eval Scoping in Tasks
+
+Each task's `evals` array lists the checks that belong to it, using the format `script_name.py: check_name`. The runner extracts the unique script names and runs only those scripts in micro task loop mode.
+
+```json
+"evals": [
+  "dashboard_eval.py: help_drawer_js_exists",
+  "dashboard_eval.py: index_has_help_btn"
+]
+```
+
+Tasks with no `evals` array fall back to running all eval commands.
 
 ## Required Framework Pieces
 
@@ -88,6 +133,8 @@ Defines:
 - artifacts directory
 - acceptance policy
 - primary metric
+- `loop_mode` — `"task"` (default) or `"full"`
+- `full_loop_every` — integer, how many runs between full project loops (default: `5`)
 
 ### 2. Tasks
 
