@@ -1,0 +1,14 @@
+{
+  "id": "010",
+  "title": "Process Table Title and Figure Title and Example titles",
+  "status": "done",
+  "priority": "high",
+  "description": "Remove any html or markdown heading identifiers from table titles, figure titles, and example titles and make them bold.",
+  "success_criteria": [
+    "Any markdown heading identifiers (e.g., #, ##, ###) are removed from table titles, figure titles, and example titles",
+    "All table titles, figure titles, and example titles are formatted in bold without any heading identifiers",
+    "The words 'Table', 'Figure', and 'Example' are followed by a colon and a space in every title",
+    "The eval rejects heading-style title lines and plain unbolded title lines"
+  ],
+  "notes": "Completed. Table, figure, and example titles now render as bold caption lines, and the eval rejects heading-style or unbolded title regressions."
+}

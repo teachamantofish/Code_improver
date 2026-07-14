@@ -1,0 +1,27 @@
+{
+  "project_name": "aps_embellisher_pdf",
+  "loop_mode": "task",
+  "full_loop_every": 5,
+  "task_dir": "Code_Improver/tasks",
+  "artifacts_dir": "Code_Improver/artifacts",
+  "summary_dir": "Code_Improver/summaries",
+  "results_file": "Code_Improver/results.tsv",
+  "runner_commands": [
+    "mkdocs build -f aps_embellisher/mkdocs.yml",
+    "python python/md2pdf/md2pdf.py"
+  ],
+  "eval_commands": [
+    "python Code_Improver/evals/toc_styling_eval.py",
+    "python Code_Improver/evals/toc_render_eval.py"
+  ],
+  "primary_metric": {
+    "field": "score",
+    "direction": "higher"
+  },
+  "required_gates": [
+    {
+      "field": "all_passed",
+      "equals": true
+    }
+  ]
+}

@@ -1,0 +1,121 @@
+{
+  "all_passed": true,
+  "score": 1.0,
+  "metric_name": "score",
+  "metric_direction": "higher",
+  "passed": 22,
+  "failed": 0,
+  "total": 22,
+  "details": [
+    {
+      "id": "toc_css_file_exists",
+      "passed": true,
+      "detail": "C:\\GIT\\Framemaker2Markdown\\aps_embellisher\\e_pdfhtml_and_pdf\\css\\toc.css"
+    },
+    {
+      "id": "toc_font_family",
+      "passed": true,
+      "detail": "ok"
+    },
+    {
+      "id": "toc_page_shell_padding",
+      "passed": true,
+      "detail": "ok"
+    },
+    {
+      "id": "toc_title_aligned_left",
+      "passed": true,
+      "detail": "ok"
+    },
+    {
+      "id": "toc_title_font_size_2em",
+      "passed": true,
+      "detail": "ok"
+    },
+    {
+      "id": "toc_title_font_weight_400",
+      "passed": true,
+      "detail": "ok"
+    },
+    {
+      "id": "toc_title_border_bottom_gray",
+      "passed": true,
+      "detail": "ok"
+    },
+    {
+      "id": "toc_links_black_no_decoration",
+      "passed": true,
+      "detail": "ok"
+    },
+    {
+      "id": "toc_depth0_indent",
+      "passed": true,
+      "detail": "ok"
+    },
+    {
+      "id": "toc_grid_row_links",
+      "passed": true,
+      "detail": "ok"
+    },
+    {
+      "id": "toc_leader_dotted_middle_track",
+      "passed": true,
+      "detail": "ok"
+    },
+    {
+      "id": "toc_h1_font_18px",
+      "passed": true,
+      "detail": "ok"
+    },
+    {
+      "id": "toc_h2_font_16px",
+      "passed": true,
+      "detail": "ok"
+    },
+    {
+      "id": "toc_h3_font_14px",
+      "passed": true,
+      "detail": "ok"
+    },
+    {
+      "id": "toc_h4_font_14px",
+      "passed": true,
+      "detail": "ok"
+    },
+    {
+      "id": "toc_h1_bold",
+      "passed": true,
+      "detail": "ok"
+    },
+    {
+      "id": "toc_dots_terminate_1in_from_right",
+      "passed": true,
+      "detail": "ok"
+    },
+    {
+      "id": "toc_page_numbers_font",
+      "passed": true,
+      "detail": "ok"
+    },
+    {
+      "id": "toc_title_is_contents",
+      "passed": true,
+      "detail": "ok"
+    },
+    {
+      "id": "toc_numbering_matches_markdown",
+      "passed": true,
+      "detail": "ok"
+    },
+    {
+      "id": "toc_h1_display_chapter_number",
+      "passed": true,
+      "detail": "ok"
+    },
+    {
+      "id": "toc_pdf_output_exists",
+      "passed": true,
+      "detail": "C:\\GIT\\Framemaker2Markdown\\aps_embellisher\\e_pdfhtml_and_pdf\\toc.pdf"
+    }
+  ]
+}

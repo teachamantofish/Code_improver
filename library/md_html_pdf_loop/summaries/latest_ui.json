@@ -1,0 +1,56 @@
+{
+  "all_passed": true,
+  "score": 1.0,
+  "metric_name": "score",
+  "metric_direction": "higher",
+  "passed": 9,
+  "failed": 0,
+  "total": 9,
+  "details": [
+    {
+      "id": "ui_no_prompt_builder_in_extension_js",
+      "passed": true,
+      "detail": "extension.js"
+    },
+    {
+      "id": "ui_no_prompt_builder_in_package_json",
+      "passed": true,
+      "detail": "package.json"
+    },
+    {
+      "id": "ui_no_prompt_builder_in_readme_md",
+      "passed": true,
+      "detail": "readme.md"
+    },
+    {
+      "id": "ui_config_scope_row_wraps",
+      "passed": true,
+      "detail": "config row should use flex-wrap"
+    },
+    {
+      "id": "ui_no_duplicate_prompt_notepad_bar",
+      "passed": true,
+      "detail": "removed extra Prompt/Notepad button row"
+    },
+    {
+      "id": "ui_config_scope_does_not_rebuild_prompt",
+      "passed": true,
+      "detail": "changing config scope must not rebuild assembled prompt textarea"
+    },
+    {
+      "id": "ui_prompt_textarea_fixed_height",
+      "passed": true,
+      "detail": "assembled prompt textarea fixed height (~75px)"
+    },
+    {
+      "id": "ui_notepad_editor_flex_fill",
+      "passed": true,
+      "detail": "notepad editor fills Notepad view"
+    },
+    {
+      "id": "ui_notepad_txt_filename",
+      "passed": true,
+      "detail": "notepad file name"
+    }
+  ]
+}

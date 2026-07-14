@@ -1,0 +1,101 @@
+{
+  "all_passed": true,
+  "score": 1.0,
+  "metric_name": "score",
+  "metric_direction": "higher",
+  "passed": 18,
+  "failed": 0,
+  "total": 18,
+  "details": [
+    {
+      "id": "title_page_title_exists",
+      "passed": true,
+      "detail": "Embellisher Developer Guide"
+    },
+    {
+      "id": "title_page_subtitle_exists",
+      "passed": true,
+      "detail": "API Reference and Integration Guide"
+    },
+    {
+      "id": "title_page_version_exists",
+      "passed": true,
+      "detail": "1.1"
+    },
+    {
+      "id": "title_page_copyright_exists",
+      "passed": true,
+      "detail": "Copyright 2026 Adobe Inc. All rights reserved."
+    },
+    {
+      "id": "title_page_banner_image_exists",
+      "passed": true,
+      "detail": "C:\\GIT\\Framemaker2Markdown\\aps_embellisher\\e_pdfhtml_and_pdf\\assets\\images\\titlebanner.png"
+    },
+    {
+      "id": "title_page_title_subtitle_alignment",
+      "passed": true,
+      "detail": "need text-align:right in .pdf-cover-title and .pdf-cover-subtitle"
+    },
+    {
+      "id": "title_page_title_subtitle_font",
+      "passed": true,
+      "detail": "need font-family:-apple-system in .pdf-cover-title or h1 or subtitle"
+    },
+    {
+      "id": "title_page_title_subtitle_color",
+      "passed": true,
+      "detail": "h1_block='text-align: right !important;\\n  font-size: 4em !important;\\n  font-family: -apple-system, BlinkMacSystemFont, Helvetica, Arial, sans-serif !important;\\n  color: #666666 !important;'  subtitle_block='text-align: right !important;\\n  padding: 0 1in 8px !important;\\n  font-size: 2.85em !important;\\n  font-family: -apple-system, BlinkMacSystemFont, Helvetica, Arial, sans-serif !important;\\n  color: #666666 !important;\\n  line-height: 1.4;'"
+    },
+    {
+      "id": "title_page_version_bold",
+      "passed": true,
+      "detail": "ok"
+    },
+    {
+      "id": "title_page_copyright_centered",
+      "passed": true,
+      "detail": "ok"
+    },
+    {
+      "id": "title_page_copyright_alignment",
+      "passed": true,
+      "detail": "need text-align:center in .pdf-cover-copyright"
+    },
+    {
+      "id": "title_page_copyright_font",
+      "passed": true,
+      "detail": "ok"
+    },
+    {
+      "id": "title_page_copyright_color",
+      "passed": true,
+      "detail": "ok"
+    },
+    {
+      "id": "title_page_copyright_size",
+      "passed": true,
+      "detail": "ok"
+    },
+    {
+      "id": "title_page_copyright_position",
+      "passed": true,
+      "detail": "ok"
+    },
+    {
+      "id": "title_page_copyright_padding",
+      "passed": true,
+      "detail": "ok"
+    },
+    {
+      "id": "title_page_copyright_margin",
+      "passed": true,
+      "detail": "no margin (ok)"
+    },
+    {
+      "id": "title_page_copyright_border",
+      "passed": true,
+      "detail": "ok"
+    }
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "id": "009",
+  "title": "Use markdown admonitions for notes, warnings, and tips",
+  "status": "done",
+  "priority": "high",
+  "description": "Replace HTML elements used for notes, warnings, and tips with markdown admonitions to improve readability and consistency across the documentation.",
+  "success_criteria": [
+    "All notes, warnings, and tips are converted to markdown admonitions",
+    "Admonitions are consistently formatted across all markdown files",
+    "Text starts with > [!NOTE] or > [!WARNING] or > [!TIP]",
+    "Text inside admonitions ispreceded by a > and properly indented",
+    "No HTML elements for notes, warnings, or tips remain in the markdown files",
+    "Admonitions are correctly rendered in the final output"
+  ],
+  "notes": "Completed. cleaned_html/Basic HTML/index.html now emits toc.md in markdown bullet-link format, with index.md retained as a compatibility alias."
+}

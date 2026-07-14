@@ -1,0 +1,13 @@
+{
+  "id": "007",
+  "title": "Copy images to a markdfown/images folder and update links.",
+  "status": "done",
+  "priority": "high",
+  "description": "Copy all images to a dedicated markdown/images folder and update the links in the markdown files accordingly.",
+  "success_criteria": [
+    "All images are copied to the markdown/images folder.",
+    "All image links in the markdown files are updated to point to the new location.",
+    "No broken image links remain in the markdown files."
+  ],
+  "notes": "Completed. Image assets are now copied to markdown/images and all generated markdown image links point there."
+}

@@ -1,0 +1,21 @@
+{
+  "all_passed": true,
+  "score": 1.0,
+  "metric_name": "score",
+  "metric_direction": "higher",
+  "passed": 2,
+  "failed": 0,
+  "total": 2,
+  "details": [
+    {
+      "id": "brand_package_displayname_crystal_context",
+      "passed": true,
+      "detail": "displayName is 'Crystal Context', expected 'Crystal Context'"
+    },
+    {
+      "id": "brand_contributes_views_crystal_context",
+      "passed": true,
+      "detail": "viewsContainers[promptBuilder].title='Crystal Context'; views[promptBuilder].promptBuilderView.name='Crystal Context'"
+    }
+  ]
+}

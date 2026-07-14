@@ -1,0 +1,36 @@
+{
+  "all_passed": true,
+  "score": 1.0,
+  "metric_name": "score",
+  "metric_direction": "higher",
+  "passed": 5,
+  "failed": 0,
+  "total": 5,
+  "details": [
+    {
+      "id": "lot_pdf_exists",
+      "passed": true,
+      "detail": "C:\\GIT\\Framemaker2Markdown\\aps_embellisher\\e_pdfhtml_and_pdf\\tables_list.pdf"
+    },
+    {
+      "id": "lot_left_margin_pixel",
+      "passed": true,
+      "detail": "left=0.833in (expected 0.75\u00b10.1in)"
+    },
+    {
+      "id": "lot_right_margin_pixel",
+      "passed": true,
+      "detail": "right=0.840in (expected 0.75\u00b10.1in)"
+    },
+    {
+      "id": "lot_dots_extend_pixel",
+      "passed": true,
+      "detail": "91% of content rows have dots spanning mid\u2192right zone"
+    },
+    {
+      "id": "lot_page_numbers_right_pixel",
+      "passed": true,
+      "detail": "82% of content rows have pixels in right 15%"
+    }
+  ]
+}

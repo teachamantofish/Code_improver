@@ -1,0 +1,56 @@
+{
+  "all_passed": false,
+  "score": 0.8888888888888888,
+  "metric_name": "score",
+  "metric_direction": "higher",
+  "passed": 8,
+  "failed": 1,
+  "total": 9,
+  "details": [
+    {
+      "id": "lot_css_file_exists",
+      "passed": true,
+      "detail": "C:\\GIT\\Framemaker2Markdown\\aps_embellisher\\e_pdfhtml_and_pdf\\css\\tablelist.css"
+    },
+    {
+      "id": "lot_entry_font_family",
+      "passed": true,
+      "detail": "ok"
+    },
+    {
+      "id": "lot_entry_font_size_14px",
+      "passed": true,
+      "detail": "ok"
+    },
+    {
+      "id": "lot_title_font_family",
+      "passed": true,
+      "detail": "ok"
+    },
+    {
+      "id": "lot_title_border_bottom",
+      "passed": true,
+      "detail": "ok"
+    },
+    {
+      "id": "lot_links_black",
+      "passed": true,
+      "detail": "ok"
+    },
+    {
+      "id": "lot_links_no_decoration",
+      "passed": true,
+      "detail": "ok"
+    },
+    {
+      "id": "lot_dots_present",
+      "passed": true,
+      "detail": "ok"
+    },
+    {
+      "id": "lot_pdf_exists",
+      "passed": false,
+      "detail": "C:\\GIT\\Framemaker2Markdown\\aps_embellisher\\e_pdfhtml_and_pdf\\tables_list.pdf"
+    }
+  ]
+}

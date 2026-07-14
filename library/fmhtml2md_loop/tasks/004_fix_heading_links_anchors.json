@@ -1,0 +1,17 @@
+{
+  "id": "004",
+  "title": "Clean up heading anchors.",
+  "status": "in_progress",
+  "priority": "high",
+  "description": "Replace all links to headings with a lower case hyphenated version of the heading text, and ensure that all headings have an anchor link that matches the new format. This will improve the readability and consistency of the documentation, as well as make it easier for users to navigate to specific sections.",
+  "success_criteria": [
+    "No html anchors in headings", 
+    "All links to headings use the heading text with lower case and hyphens as anchors",
+    "No quotes around any link to a heading", 
+    "No text such as \"on page <page number>\" in any link to a heading",
+    "TOC and body links derive fragments from the same slug normalization that the target markdown headings use",
+    "All local markdown fragment links to headings resolve to an existing heading anchor in the target file",
+    "References to table captions either resolve to a preserved markdown anchor or are rewritten to a valid target"
+  ],
+  "notes": "In progress. Remaining failures are caused by fragment-slug mismatches for punctuation-heavy headings like input.json/report.json/CameraSettings and by unresolved Table N.M references after table captions were converted from HTML anchors to bold markdown lines."
+}

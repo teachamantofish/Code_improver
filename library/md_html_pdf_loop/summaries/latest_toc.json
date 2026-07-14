@@ -1,0 +1,36 @@
+{
+  "all_passed": true,
+  "score": 1.0,
+  "metric_name": "score",
+  "metric_direction": "higher",
+  "passed": 5,
+  "failed": 0,
+  "total": 5,
+  "details": [
+    {
+      "id": "title_css_file_exists",
+      "passed": true,
+      "detail": "C:\\GIT\\Framemaker2Markdown\\aps_embellisher\\e_pdfhtml_and_pdf\\css\\title.css"
+    },
+    {
+      "id": "title_css_copyright_centered",
+      "passed": true,
+      "detail": "ok"
+    },
+    {
+      "id": "title_css_copyright_bottom_1in",
+      "passed": true,
+      "detail": "ok"
+    },
+    {
+      "id": "title_css_title_subtitle_color",
+      "passed": true,
+      "detail": "ok"
+    },
+    {
+      "id": "title_css_version_bold",
+      "passed": true,
+      "detail": "ok"
+    }
+  ]
+}

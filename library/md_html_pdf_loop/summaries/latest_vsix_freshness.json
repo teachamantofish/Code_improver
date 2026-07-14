@@ -1,0 +1,31 @@
+{
+  "all_passed": true,
+  "score": 1.0,
+  "metric_name": "score",
+  "metric_direction": "higher",
+  "passed": 4,
+  "failed": 0,
+  "total": 4,
+  "details": [
+    {
+      "id": "vsix_npm_available",
+      "passed": true,
+      "detail": "npm required to run npm run package"
+    },
+    {
+      "id": "vsix_npm_package_exit_zero",
+      "passed": true,
+      "detail": "\n> crystal-context@0.0.4 package\n> npm run build -- --minify && npx @vscode/vsce package --no-dependencies\n\n\n> crystal-context@0.0.4 build\n> npx esbuild extension.js --bundle --outfile=dist/extension.js --external:vscode --platform=node --minify\n\n INFO  Files included in the VSIX:\ncrystal-context-0.0.4.vsix\n\u00e2\u201d\u0153\u00e2\u201d\u20ac [Content_Types].xml \n\u00e2\u201d\u0153\u00e2\u201d\u20ac extension.vsixmanifest \n\u00e2\u201d\u201d\u00e2\u201d\u20ac extension/\n   \u00e2\u201d\u0153\u00e2\u201d\u20ac crystalcontext_config.md [1.55 KB]\n   \u00e2\u201d\u0153\u00e2\u201d\u20ac package.json [1.8 KB]\n   \u00e2\u201d\u0153\u00e2\u201d\u20ac readme.md [3.92 KB]\n   \u00e2\u201d\u0153\u00e2\u201d\u20ac dist/\n   \u00e2\u201d\u201a  \u00e2\u201d\u201d\u00e2\u201d\u20ac extension.js [79.96 KB]\n   \u00e2\u201d\u201d\u00e2\u201d\u20ac media/\n      \u00e2\u201d\u201d\u00e2\u201d\u20ac prompt-builder.svg [0.44 KB]\n\nThe file extension/dist/extension.js is large (79.96 KB)\n\n DONE  Packaged: C:\\GIT\\A_HOME_machine\\VISX_Crystal_Context\\crystal-context-0.0.4.vsix (7 files, 28.4 KB)\n\n  dist\\extension.js  80.0kb\n\nDone in 13ms\n WARNING  A 'repository' field is missing from the 'package.json' manifest file.\nUse --allow-missing-repository to bypass.\n WARNING  LICENSE, LICENSE.md, or LICENSE.txt not found\n"
+    },
+    {
+      "id": "vsix_file_exists",
+      "passed": true,
+      "detail": "expected crystal-context-*.vsix in repo root after npm run package"
+    },
+    {
+      "id": "vsix_mtime_fresh",
+      "passed": true,
+      "detail": "crystal-context-0.0.4.vsix age 0s (max 120s)"
+    }
+  ]
+}

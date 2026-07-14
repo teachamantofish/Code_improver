@@ -1,0 +1,77 @@
+{
+  "all_passed": true,
+  "score": 1.0,
+  "metric_name": "score",
+  "metric_direction": "higher",
+  "passed": 13,
+  "failed": 0,
+  "total": 13,
+  "details": [
+    {
+      "id": "cat_doc_runbook_present",
+      "passed": true,
+      "detail": "dev/WEBVIEW_NON_LOADING_RUNBOOK.md should contain the issue table"
+    },
+    {
+      "id": "cat_doc_runbook_has_eleven_rows",
+      "passed": true,
+      "detail": "runbook table should list rows 1 and 11"
+    },
+    {
+      "id": "cat_row01_ready_synchronous_send",
+      "passed": true,
+      "detail": "catalog #1: synchronous ready + guard"
+    },
+    {
+      "id": "cat_row04_no_workspace_branch",
+      "passed": true,
+      "detail": "catalog #4: host posts noWorkspace when no folder (Local)"
+    },
+    {
+      "id": "cat_row05_no_file_branch",
+      "passed": true,
+      "detail": "catalog #5: host posts noFile when config missing"
+    },
+    {
+      "id": "cat_row06_parse_error_branch",
+      "passed": true,
+      "detail": "catalog #6: host posts parseError on bad YAML"
+    },
+    {
+      "id": "cat_row07_webview_diag",
+      "passed": true,
+      "detail": "catalog #7: webview errors forwarded to host"
+    },
+    {
+      "id": "cat_row08_session_start",
+      "passed": true,
+      "detail": "catalog #8: session line on ready"
+    },
+    {
+      "id": "cat_row10_no_backticks_in_js_line_comments_inside_template",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "id": "cat_row11_extension_test_in_repo",
+      "passed": true,
+      "detail": "test/extension-test.js exists"
+    },
+    {
+      "id": "cat_row02_main_points_dist",
+      "passed": true,
+      "detail": "catalog #2\u20133: main is dist bundle"
+    },
+    {
+      "id": "cat_row11_npm_test_runs_extension_test",
+      "passed": true,
+      "detail": "catalog #11: npm test includes extension-test.js"
+    },
+    {
+      "id": "cat_row09_vscodeignore_excludes_dev",
+      "passed": true,
+      "detail": "catalog #9: VSIX excludes source + dev dirs"
+    }
+  ],
+  "notes": "Rows covered elsewhere in the full loop: stale VSIX (vsix_freshness_eval), dist vs source (webview_reliability rel_dist_*), full npm test (extension_eval). Rows 4\u20136 user workspace/config are runtime; host branches are asserted above."
+}

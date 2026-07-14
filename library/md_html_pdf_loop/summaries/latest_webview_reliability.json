@@ -1,0 +1,76 @@
+{
+  "all_passed": true,
+  "score": 1.0,
+  "metric_name": "score",
+  "metric_direction": "higher",
+  "passed": 13,
+  "failed": 0,
+  "total": 13,
+  "details": [
+    {
+      "id": "rel_dist_bundle_not_stale_vs_extension",
+      "passed": true,
+      "detail": "run npm run build so dist/extension.js is at least as new as extension.js"
+    },
+    {
+      "id": "rel_ready_synchronous_send",
+      "passed": true,
+      "detail": "end-of-script send() so ready fires even if DOMContentLoaded/load miss listeners"
+    },
+    {
+      "id": "rel_ready_idempotent_guard",
+      "passed": true,
+      "detail": "single-fire guard for ready"
+    },
+    {
+      "id": "rel_host_ready_then_loaditems",
+      "passed": true,
+      "detail": "ready handler must call _loadItems"
+    },
+    {
+      "id": "rel_loaditems_gated_by_webview_ready",
+      "passed": true,
+      "detail": "_loadItems must bail if webview never sent ready"
+    },
+    {
+      "id": "rel_webview_diag_pipeline",
+      "passed": true,
+      "detail": "forward webview console/window errors to host"
+    },
+    {
+      "id": "rel_session_start_logged",
+      "passed": true,
+      "detail": "log a line when webview connects so log file is not empty only on errors"
+    },
+    {
+      "id": "rel_log_append_dual_location",
+      "passed": true,
+      "detail": "append debug log to workspace and/or globalStorage"
+    },
+    {
+      "id": "rel_package_main_is_dist_bundle",
+      "passed": true,
+      "detail": "main must be ./dist/extension.js, got './dist/extension.js'"
+    },
+    {
+      "id": "rel_npm_test_includes_extension_integration",
+      "passed": true,
+      "detail": "npm test must build then run test/extension-test.js"
+    },
+    {
+      "id": "rel_improver_loop_script_present",
+      "passed": true,
+      "detail": "npm run improver:loop should run Code_Improver/run_loop.py"
+    },
+    {
+      "id": "rel_release_script_present",
+      "passed": true,
+      "detail": "npm run release should alias the full eval loop (incl. VSIX freshness eval)"
+    },
+    {
+      "id": "rel_vscodeignore_excludes_source_extension_js",
+      "passed": true,
+      "detail": ".vscodeignore must list extension.js so VSIX ships dist bundle only"
+    }
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "id": "000",
+  "title": "",
+  "status": "todo",
+  "priority": "high",
+  "description": "",
+  "success_criteria": [
+    "description of success criteria"
+  ],
+  "evals": [
+    "component_eval.py: function name with binary eval"
+  ],
+  "notes": ""
+}

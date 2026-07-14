@@ -1,0 +1,46 @@
+{
+  "all_passed": true,
+  "score": 1.0,
+  "metric_name": "score",
+  "metric_direction": "higher",
+  "passed": 7,
+  "failed": 0,
+  "total": 7,
+  "details": [
+    {
+      "id": "notepad_filename_constant",
+      "passed": true,
+      "detail": "expect NOTEPAD_FILE / crystalcontext_notepad.txt"
+    },
+    {
+      "id": "notepad_handlers",
+      "passed": true,
+      "detail": "expect notepad message handlers"
+    },
+    {
+      "id": "notepad_dom_ids",
+      "passed": true,
+      "detail": "expect Notepad UI injected into #panels when YAML Notepad tab is active"
+    },
+    {
+      "id": "notepad_debounce_save",
+      "passed": true,
+      "detail": "expect debounced save (~400ms)"
+    },
+    {
+      "id": "notepad_yaml_tab_notepad",
+      "passed": true,
+      "detail": "expect Notepad tab from crystalcontext_config to show notepad editor"
+    },
+    {
+      "id": "notepad_messages_to_host",
+      "passed": true,
+      "detail": "expect webview notepadLoad postMessage"
+    },
+    {
+      "id": "notepad_npm_test_runs_console_smoke",
+      "passed": true,
+      "detail": "package.json test should run webview-console-smoke.js (no console errors)"
+    }
+  ]
+}

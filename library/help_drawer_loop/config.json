@@ -1,0 +1,25 @@
+{
+  "project_name": "vani_dashboard",
+  "loop_mode": "task",
+  "full_loop_every": 5,
+  "task_dir": "Code_Improver/tasks",
+  "artifacts_dir": "Code_Improver/artifacts",
+  "summary_dir": "Code_Improver/summaries",
+  "results_file": "Code_Improver/results.tsv",
+  "runner_commands": [],
+  "eval_commands": [
+    "python Code_Improver/evals/dashboard_eval.py",
+    "python Code_Improver/evals/browser_eval.py",
+    "python Code_Improver/evals/charts_sync_eval.py"
+  ],
+  "primary_metric": {
+    "field": "score",
+    "direction": "higher"
+  },
+  "required_gates": [
+    {
+      "field": "all_passed",
+      "equals": true
+    }
+  ]
+}

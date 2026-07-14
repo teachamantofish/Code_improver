@@ -1,0 +1,56 @@
+{
+  "all_passed": true,
+  "score": 1.0,
+  "metric_name": "score",
+  "metric_direction": "higher",
+  "passed": 9,
+  "failed": 0,
+  "total": 9,
+  "details": [
+    {
+      "id": "package_json_parse",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "id": "package_json_has_main",
+      "passed": true,
+      "detail": "expected main field"
+    },
+    {
+      "id": "package_json_has_test",
+      "passed": true,
+      "detail": "expected npm test script"
+    },
+    {
+      "id": "package_json_has_build",
+      "passed": true,
+      "detail": "expected npm run build script"
+    },
+    {
+      "id": "extension_js_exists",
+      "passed": true,
+      "detail": "missing extension.js"
+    },
+    {
+      "id": "crystalcontext_config_present",
+      "passed": true,
+      "detail": "sample crystalcontext_config.md at repo root"
+    },
+    {
+      "id": "npm_on_path",
+      "passed": true,
+      "detail": "C:\\tools\\nvm4w\\nodejs\\npm.CMD"
+    },
+    {
+      "id": "npm_run_build",
+      "passed": true,
+      "detail": "> crystal-context@0.0.4 build\n> npx esbuild extension.js --bundle --outfile=dist/extension.js --external:vscode --platform=node\n\n\n  dist\\extension.js  148.0kb\n\nDone in 11ms"
+    },
+    {
+      "id": "npm_test_webview_regression",
+      "passed": true,
+      "detail": "> crystal-context@0.0.4 test\n> npm run build && node test/webview-regression.js && node test/webview-console-smoke.js && node test/notepad-disk-roundtrip.js && node test/extension-test.js\n\n\n> crystal-context@0.0.4 build\n> npx esbuild extension.js --bundle --outfile=dist/extension.js --external:vscode --platform=node\n\nwebview regression checks passed\nwebview console smoke passed\nnotepad disk roundtrip ok\n\n[1] activate()\n  PASS: registerWebviewViewProvider called\n\n[2] resolveWebviewView()\n  PASS: HTML written to webview\n  PASS: acquireVsCodeApi present in HTML\n  PASS: CSP meta tag present\n  PASS: script nonce present\n  PASS: onDidReceiveMessage registered\n\n[3] ready message (no workspace)\n  PASS: posted noWorkspace as expected\n\n[4] ready message (workspace = project root)\n  PASS: loadItems received\n  PASS: tabs: [\"Claude Basic\",\"Claude Session\",\"Notepad\"]\n  PASS: sections in first tab: mode, skills, rules, permissions, model, token-memory management, slash commands\n  PASS: loadItems.tabs non-empty\n  PASS: loadItems.sections is array (len 7)\n\nAll tests passed \u00e2\u20ac\u201d extension loads and drives correctly.\n\n  dist\\extension.js  148.0kb\n\nDone in 11ms"
+    }
+  ]
+}

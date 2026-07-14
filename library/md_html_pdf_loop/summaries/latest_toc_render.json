@@ -1,0 +1,41 @@
+{
+  "all_passed": false,
+  "score": 0.0,
+  "metric_name": "score",
+  "metric_direction": "higher",
+  "passed": 0,
+  "failed": 6,
+  "total": 6,
+  "details": [
+    {
+      "id": "toc_pdf_exists_after_build",
+      "passed": false,
+      "detail": "could not delete C:\\GIT\\Framemaker2Markdown\\aps_embellisher\\e_pdfhtml_and_pdf\\toc.pdf (close viewers using the file): [WinError 32] The process cannot access the file because it is being used by another process: 'C:\\\\GIT\\\\Framemaker2Markdown\\\\aps_embellisher\\\\e_pdfhtml_and_pdf\\\\toc.pdf'"
+    },
+    {
+      "id": "toc_left_margin_0p75in",
+      "passed": false,
+      "detail": "could not delete C:\\GIT\\Framemaker2Markdown\\aps_embellisher\\e_pdfhtml_and_pdf\\toc.pdf (close viewers using the file): [WinError 32] The process cannot access the file because it is being used by another process: 'C:\\\\GIT\\\\Framemaker2Markdown\\\\aps_embellisher\\\\e_pdfhtml_and_pdf\\\\toc.pdf'"
+    },
+    {
+      "id": "toc_right_margin_0p75in",
+      "passed": false,
+      "detail": "could not delete C:\\GIT\\Framemaker2Markdown\\aps_embellisher\\e_pdfhtml_and_pdf\\toc.pdf (close viewers using the file): [WinError 32] The process cannot access the file because it is being used by another process: 'C:\\\\GIT\\\\Framemaker2Markdown\\\\aps_embellisher\\\\e_pdfhtml_and_pdf\\\\toc.pdf'"
+    },
+    {
+      "id": "toc_pdf_has_no_blank_pages",
+      "passed": false,
+      "detail": "could not delete C:\\GIT\\Framemaker2Markdown\\aps_embellisher\\e_pdfhtml_and_pdf\\toc.pdf (close viewers using the file): [WinError 32] The process cannot access the file because it is being used by another process: 'C:\\\\GIT\\\\Framemaker2Markdown\\\\aps_embellisher\\\\e_pdfhtml_and_pdf\\\\toc.pdf'"
+    },
+    {
+      "id": "toc_dots_terminate_1in_from_right",
+      "passed": false,
+      "detail": "could not delete C:\\GIT\\Framemaker2Markdown\\aps_embellisher\\e_pdfhtml_and_pdf\\toc.pdf (close viewers using the file): [WinError 32] The process cannot access the file because it is being used by another process: 'C:\\\\GIT\\\\Framemaker2Markdown\\\\aps_embellisher\\\\e_pdfhtml_and_pdf\\\\toc.pdf'"
+    },
+    {
+      "id": "toc_all_entries_have_page_numbers",
+      "passed": false,
+      "detail": "could not delete C:\\GIT\\Framemaker2Markdown\\aps_embellisher\\e_pdfhtml_and_pdf\\toc.pdf (close viewers using the file): [WinError 32] The process cannot access the file because it is being used by another process: 'C:\\\\GIT\\\\Framemaker2Markdown\\\\aps_embellisher\\\\e_pdfhtml_and_pdf\\\\toc.pdf'"
+    }
+  ]
+}

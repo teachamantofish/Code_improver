@@ -1,0 +1,22 @@
+timestamp	task_id	task_title	attempt_status	decision	metric_name	metric_value	passed	failed	run_dir	summary_path	description
+20260413T001535Z	001	Flatten Markdown Output Layout	completed	keep	score	1.0	6	0	improvement/artifacts/20260413T001535Z_001	improvement/artifacts/20260413T001535Z_001/summary.json	flatten markdown output layout
+20260413T205500Z	004	Clean up heading anchors.	completed	keep	score	1.0	17	0			task 004 heading slug cleanup
+20260413T211500Z	005	Remove raw HTML anchors from Markdown output	completed	keep	score	1.0	19	0			task 005 remove raw html anchors
+20260413T214500Z	006	Remove autonumbering from headings, tables, examples, and figures.	completed	keep	score	1.0	21	0			task 006 remove autonumbering
+20260413T221500Z	007	Copy images to a markdfown/images folder and update links.	completed	keep	score	1.0	25	0			task 007 process images
+20260413T223500Z	008	Process TOC	completed	keep	score	1.0	28	0			task 008 process toc
+20260412T000000Z	009	Fix split words in table cells	completed	keep	score	1.0	29	0			fix FrameMaker line-wrap artifact in td text nodes
+20260412T000001Z	010	Remove "on page N" from link labels	completed	keep	score	1.0	30	0			strip page refs and quotes from link labels in normalize_link_label
+20260412T000002Z	011	Fix adjacent code span artifacts	completed	keep	score	1.0	31	0			merge adjacent <code> tags in clean_html before markdownify conversion
+20260412T000003Z	0090	Use markdown admonitions for notes, warnings, and tips	completed	keep	score	1.0	31	0			extend postprocess_markdown to convert Tip/Warning/bare Note: to > [!TYPE] callouts
+20260414T015825Z	010	Process Table Title and Figure Title and Example titles	crash	crash	score	0	0	0	improvement/artifacts/20260414T015825Z_010	improvement/artifacts/20260414T015825Z_010/summary.json	Convert table/figure/example titles to bold captions with binary eval coverage
+20260414T015910Z	010	Process Table Title and Figure Title and Example titles	completed	discard	score	0.96875	31	1	improvement/artifacts/20260414T015910Z_010	improvement/artifacts/20260414T015910Z_010/summary.json	Convert table/figure/example titles to bold captions with binary eval coverage
+20260414T015952Z	010	Process Table Title and Figure Title and Example titles	completed	discard	score	1.0	32	0	improvement/artifacts/20260414T015952Z_010	improvement/artifacts/20260414T015952Z_010/summary.json	Handle plain and numbered table/figure/example titles as bold captions
+20260414T020007Z	010	Process Table Title and Figure Title and Example titles	completed	keep	score	1.0	32	0	improvement/artifacts/20260414T020007Z_010	improvement/artifacts/20260414T020007Z_010/summary.json	Force-accept task 010 after all eval gates passed at score 1.0
+20260414T020414Z	004	Clean up heading anchors.	completed	discard	score	1.0	33	0	improvement/artifacts/20260414T020414Z_004	improvement/artifacts/20260414T020414Z_004/summary.json	Strip quotes from heading link labels and add a binary eval for quoted heading links
+20260414T020424Z	004	Clean up heading anchors.	completed	keep	score	1.0	33	0	improvement/artifacts/20260414T020424Z_004	improvement/artifacts/20260414T020424Z_004/summary.json	Force-accept task 004 after adding quoted heading-link eval and fixing quoted labels
+20260414T021753Z	008	Process TOC	crash	crash	score	0	0	0	improvement/artifacts/20260414T021753Z_008	improvement/artifacts/20260414T021753Z_008/summary.json	Generate toc.md from autonumber depth and add TOC indentation/nbsp evals
+20260414T021811Z	008	Process TOC	crash	crash	score	0	0	0	improvement/artifacts/20260414T021811Z_008	improvement/artifacts/20260414T021811Z_008/summary.json	Generate toc.md from autonumber depth and add TOC indentation/nbsp evals
+20260414T021828Z	008	Process TOC	completed	discard	score	1.0	36	0	improvement/artifacts/20260414T021828Z_008	improvement/artifacts/20260414T021828Z_008/summary.json	Generate toc.md from autonumber depth and add TOC indentation/nbsp evals
+20260414T021842Z	008	Process TOC	completed	keep	score	1.0	36	0	improvement/artifacts/20260414T021842Z_008	improvement/artifacts/20260414T021842Z_008/summary.json	Force-accept task 008 after autonumber-based TOC generation and evals passed
+20260414T022742Z	008	Process TOC	completed	discard	score	1.0	36	0	improvement/artifacts/20260414T022742Z_008	improvement/artifacts/20260414T022742Z_008/summary.json	Stop generating index.md alias and keep toc.md as the only TOC output

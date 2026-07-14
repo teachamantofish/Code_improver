@@ -1,0 +1,28 @@
+{
+  "id": "003",
+  "title": "",
+  "status": "todo",
+  "priority": "high",
+  "description": "",
+  "success_criteria": [
+    "combined PDF contains the title page, list of tables page, TOC page, and the rest of the document",
+    "The list of tables page contains all required content, including the full list of tables with page numbers",
+    "The TOC page contains all required content, including headings with page numbers",
+    "The TOC page has the correct page numbers for each entry in the TOC",
+    "The TOC page numbers are aligned right",
+    "The TOC page links navigate to the correct page",
+    "Title page has no page number",
+    "List of tables page has no page number",
+    "TOC pages have no page numbers",
+    "list of tables (if any) has the correct page numbers for the tables",
+    "list of figures (if any) page has no page number",
+    "list of figures (if any) page has the correct page numbers for the figures",
+    "page numbers are in the footer of every page after the TOC page",
+    "page numbers are aligned right",
+    "page numbers are in the same font as the rest of the document"
+  ],
+  "evals": [
+    "component_eval.py: function name with binary eval"
+  ],
+  "notes": ""
+}

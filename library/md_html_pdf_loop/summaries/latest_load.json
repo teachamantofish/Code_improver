@@ -1,0 +1,36 @@
+{
+  "all_passed": true,
+  "score": 1.0,
+  "metric_name": "score",
+  "metric_direction": "higher",
+  "passed": 5,
+  "failed": 0,
+  "total": 5,
+  "details": [
+    {
+      "id": "load_ready_synchronous_send",
+      "passed": true,
+      "detail": "call send() once synchronously so ready fires even if DOMContentLoaded/load never reach listeners"
+    },
+    {
+      "id": "load_ready_guard",
+      "passed": true,
+      "detail": "expect single-fire guard for ready postMessage"
+    },
+    {
+      "id": "load_ready_command",
+      "passed": true,
+      "detail": "expect postMessage ready"
+    },
+    {
+      "id": "load_host_loaditems",
+      "passed": true,
+      "detail": "expect host posts loadItems"
+    },
+    {
+      "id": "load_is_webview_ready_gate",
+      "passed": true,
+      "detail": "expect ready handler sets _isWebviewReady before _loadItems"
+    }
+  ]
+}

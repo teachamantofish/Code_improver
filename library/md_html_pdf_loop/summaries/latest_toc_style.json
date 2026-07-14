@@ -1,0 +1,56 @@
+{
+  "all_passed": true,
+  "score": 1.0,
+  "metric_name": "score",
+  "metric_direction": "higher",
+  "passed": 9,
+  "failed": 0,
+  "total": 9,
+  "details": [
+    {
+      "id": "toc_links_black_no_decoration",
+      "passed": true,
+      "detail": "ok"
+    },
+    {
+      "id": "toc_depth0_indent_2ch",
+      "passed": true,
+      "detail": "ok"
+    },
+    {
+      "id": "toc_dots_end_1p25in",
+      "passed": true,
+      "detail": "ok"
+    },
+    {
+      "id": "toc_h1_font_18px",
+      "passed": true,
+      "detail": "ok"
+    },
+    {
+      "id": "toc_h2_font_16px",
+      "passed": true,
+      "detail": "ok"
+    },
+    {
+      "id": "toc_h3_font_14px",
+      "passed": true,
+      "detail": "ok"
+    },
+    {
+      "id": "toc_h4_font_12px",
+      "passed": true,
+      "detail": "ok"
+    },
+    {
+      "id": "toc_h1_bold",
+      "passed": true,
+      "detail": "ok"
+    },
+    {
+      "id": "toc_numbering_matches_markdown",
+      "passed": true,
+      "detail": "ok"
+    }
+  ]
+}

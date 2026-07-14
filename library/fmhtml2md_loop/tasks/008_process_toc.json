@@ -1,0 +1,18 @@
+{
+  "id": "008",
+  "title": "Process TOC",
+  "status": "done",
+  "priority": "high",
+  "description": "Convert index.html to toc.md and convert to md format.",
+  "success_criteria": [
+    "toc.md is generated from index.html",
+    "Replace the unordered lists with indented markdown bullet points in toc.md",
+    "All TOC indents are determined from the autonumbering depth in index.html rather than inferred from HTML heading tags",
+    "Remove autonumbering preceding heading titles in toc.md. Do not remove any numbers that are part of the heading titles themselves.",
+    "toc.md uses markdown formatting and links",
+    "No broken links remain in toc.md.",
+    "Replace __160 and similar non-breaking-space artifacts in toc.md with normal spaces so heading links render correctly.",
+    "All H1 parent entries with no autonumbering are flush-left in toc.md with no indentation before the markdown bullet."
+  ],
+  "notes": "Completed. cleaned_html/Basic HTML/index.html now emits toc.md in markdown bullet-link format, with index.md retained as a compatibility alias."
+}

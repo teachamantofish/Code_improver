@@ -1,0 +1,41 @@
+{
+  "all_passed": true,
+  "score": 1.0,
+  "metric_name": "score",
+  "metric_direction": "higher",
+  "passed": 6,
+  "failed": 0,
+  "total": 6,
+  "details": [
+    {
+      "name": "markdown_exists",
+      "passed": true,
+      "detail": "markdown dir: /home/ben/GIT/fm_html_md/markdown"
+    },
+    {
+      "name": "markdown_has_files",
+      "passed": true,
+      "detail": "markdown files: 19"
+    },
+    {
+      "name": "index_md_exists",
+      "passed": true,
+      "detail": "index candidates: ['markdown/index.md']"
+    },
+    {
+      "name": "markdown_is_flat",
+      "passed": true,
+      "detail": "nested markdown files: []"
+    },
+    {
+      "name": "html_links_rewritten",
+      "passed": true,
+      "detail": "bad html links: []"
+    },
+    {
+      "name": "markdown_targets_exist",
+      "passed": true,
+      "detail": "missing local markdown targets: []"
+    }
+  ]
+}

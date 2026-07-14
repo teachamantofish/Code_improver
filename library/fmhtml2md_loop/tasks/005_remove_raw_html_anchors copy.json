@@ -1,0 +1,13 @@
+{
+  "id": "005",
+  "title": "Remove raw HTML anchors from Markdown output",
+  "status": "done",
+  "priority": "high",
+  "description": "Remove remaining <a id=\"...\"> tags from generated Markdown now that heading links use markdown-native slug fragments and no current links depend on the raw HTML anchor ids.",
+  "success_criteria": [
+    "No raw HTML anchor tags remain in generated Markdown",
+    "All internal fragment links still resolve using markdown heading slugs",
+    "No current markdown links depend on legacy raw anchor ids"
+  ],
+  "notes": "Completed. Verified that zero current markdown links resolve against raw HTML anchor ids before removing them."
+}

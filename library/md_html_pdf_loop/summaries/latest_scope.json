@@ -1,0 +1,71 @@
+{
+  "all_passed": true,
+  "score": 1.0,
+  "metric_name": "score",
+  "metric_direction": "higher",
+  "passed": 12,
+  "failed": 0,
+  "total": 12,
+  "details": [
+    {
+      "id": "scope_ui_two_radios_local_global",
+      "passed": true,
+      "detail": "expect two radios name=configScope with ids radioScopeLocal / radioScopeGlobal"
+    },
+    {
+      "id": "scope_ui_labels_project_and_home",
+      "passed": true,
+      "detail": "expect visible labels for Local (project root) and Global (.claude)"
+    },
+    {
+      "id": "scope_message_handler_setConfigScope",
+      "passed": true,
+      "detail": "expect onDidReceiveMessage case setConfigScope"
+    },
+    {
+      "id": "scope_webview_posts_setConfigScope",
+      "passed": true,
+      "detail": "expect vscode.postMessage setConfigScope from webview"
+    },
+    {
+      "id": "scope_globalstate_key",
+      "passed": true,
+      "detail": "expect globalState key for config scope"
+    },
+    {
+      "id": "scope_resolve_local_workspace_path",
+      "passed": true,
+      "detail": "expect _resolveConfigPathInfo using workspaceFolders for local scope"
+    },
+    {
+      "id": "scope_resolve_global_homedir",
+      "passed": true,
+      "detail": "expect global config at path.join(os.homedir(), '.claude', crystalcontext_config.md)"
+    },
+    {
+      "id": "scope_constants_config_filename",
+      "passed": true,
+      "detail": "expect crystalcontext_config.md filename"
+    },
+    {
+      "id": "scope_setup_config_watcher",
+      "passed": true,
+      "detail": "expect _setupConfigWatcher to refresh on file changes"
+    },
+    {
+      "id": "scope_loaditems_includes_configScope",
+      "passed": true,
+      "detail": "expect loadItems postMessage to include configScope"
+    },
+    {
+      "id": "scope_sync_message_configScope",
+      "passed": true,
+      "detail": "expect configScope message to sync radios"
+    },
+    {
+      "id": "scope_on_did_change_workspace_folders",
+      "passed": true,
+      "detail": "expect reload when workspace folders change (Local scope)"
+    }
+  ]
+}

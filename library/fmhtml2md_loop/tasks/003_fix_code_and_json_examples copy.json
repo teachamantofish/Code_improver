@@ -1,0 +1,15 @@
+{
+  "id": "003",
+  "title": "Repair Code And JSON Examples",
+  "status": "pending",
+  "priority": "high",
+  "description": "Ensure examples are fenced correctly, carry language IDs, and preserve in-band snip placeholders.",
+  "success_criteria": [
+    "All code fences have language IDs",
+    "All code fences have the correct lang ID.",
+    "A single example beneath an Example tag stays in one fenced block",
+    "Broken JSON examples are reassembled and reformatted where recoverable",
+    "... placeholders stay inside the same fenced example block"
+  ],
+  "notes": ""
+}

@@ -1,0 +1,176 @@
+{
+  "all_passed": true,
+  "score": 1.0,
+  "metric_name": "score",
+  "metric_direction": "higher",
+  "passed": 33,
+  "failed": 0,
+  "total": 33,
+  "details": [
+    {
+      "name": "markdown_exists",
+      "passed": true,
+      "detail": "markdown dir: /home/ben/GIT/fm_html_md/markdown"
+    },
+    {
+      "name": "markdown_has_files",
+      "passed": true,
+      "detail": "markdown files: 20"
+    },
+    {
+      "name": "index_md_exists",
+      "passed": true,
+      "detail": "index candidates: ['markdown/index.md']"
+    },
+    {
+      "name": "toc_md_exists",
+      "passed": true,
+      "detail": "toc exists: True"
+    },
+    {
+      "name": "markdown_is_flat",
+      "passed": true,
+      "detail": "nested markdown files: []"
+    },
+    {
+      "name": "markdown_filenames_are_lowercase",
+      "passed": true,
+      "detail": "non-lowercase markdown files: []"
+    },
+    {
+      "name": "html_links_rewritten",
+      "passed": true,
+      "detail": "bad html links: []"
+    },
+    {
+      "name": "markdown_targets_exist",
+      "passed": true,
+      "detail": "missing local markdown targets: []"
+    },
+    {
+      "name": "markdown_links_are_lowercase",
+      "passed": true,
+      "detail": "non-lowercase markdown links: []"
+    },
+    {
+      "name": "toc_uses_markdown_bullets",
+      "passed": true,
+      "detail": "toc formatting issues: []"
+    },
+    {
+      "name": "toc_links_resolve",
+      "passed": true,
+      "detail": "toc missing targets: []"
+    },
+    {
+      "name": "xref_fragments_are_rewritten",
+      "passed": true,
+      "detail": "raw xref fragments: []"
+    },
+    {
+      "name": "code_fences_have_language_ids",
+      "passed": true,
+      "detail": "unlabeled code fences: []"
+    },
+    {
+      "name": "code_fences_are_not_empty",
+      "passed": true,
+      "detail": "empty fenced code blocks: []"
+    },
+    {
+      "name": "markdown_contains_no_raw_html_anchor_tags",
+      "passed": true,
+      "detail": "markdown files with raw html anchors: []"
+    },
+    {
+      "name": "image_links_use_images_folder",
+      "passed": true,
+      "detail": "image links not in images folder: []"
+    },
+    {
+      "name": "image_targets_exist",
+      "passed": true,
+      "detail": "missing image targets: []"
+    },
+    {
+      "name": "text_code_fences_are_not_obviously_misclassified",
+      "passed": true,
+      "detail": "suspicious text fences: []"
+    },
+    {
+      "name": "duplicate_structural_anchors_removed",
+      "passed": true,
+      "detail": "duplicate structural anchors: []"
+    },
+    {
+      "name": "headings_do_not_embed_html_anchors",
+      "passed": true,
+      "detail": "headings with html anchors: []"
+    },
+    {
+      "name": "markdown_does_not_emit_standalone_anchor_lines",
+      "passed": true,
+      "detail": "standalone anchor lines: []"
+    },
+    {
+      "name": "heading_links_use_slug_fragments",
+      "passed": true,
+      "detail": "non-slug fragments: []"
+    },
+    {
+      "name": "heading_link_labels_are_not_quoted",
+      "passed": true,
+      "detail": "quoted heading link labels: []"
+    },
+    {
+      "name": "headings_do_not_use_autonumbering",
+      "passed": true,
+      "detail": "autonumbered headings: []"
+    },
+    {
+      "name": "table_figure_example_titles_do_not_use_autonumbering",
+      "passed": true,
+      "detail": "autonumbered table/figure/example titles: []"
+    },
+    {
+      "name": "table_figure_example_titles_are_not_headings",
+      "passed": true,
+      "detail": "title heading lines: []"
+    },
+    {
+      "name": "table_figure_example_titles_are_bold",
+      "passed": true,
+      "detail": "non-bold title lines: []; bold title samples: ['markdown/demoapp.md -> **Table: Command line parameters: Goldsmith demo**', 'markdown/demoapp.md -> **Figure: Basic job workflow**', 'markdown/demoapp.md -> **Figure: Multiple Job Mode Workflow**']"
+    },
+    {
+      "name": "table_figure_example_titles_use_colon_space_format",
+      "passed": true,
+      "detail": "malformed title lines: []"
+    },
+    {
+      "name": "admonitions_use_callout_format",
+      "passed": true,
+      "detail": "legacy note/warning/tip formatting: []"
+    },
+    {
+      "name": "faq_pages_use_h1",
+      "passed": true,
+      "detail": "faq heading issues: []"
+    },
+    {
+      "name": "table_cells_have_no_split_words",
+      "passed": true,
+      "detail": "table cells with split words: []"
+    },
+    {
+      "name": "links_do_not_contain_on_page_references",
+      "passed": true,
+      "detail": "files with 'on page N' in links: []"
+    },
+    {
+      "name": "no_adjacent_code_span_artifacts",
+      "passed": true,
+      "detail": "files with adjacent code span artifacts: []"
+    }
+  ]
+}

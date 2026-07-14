@@ -1,0 +1,13 @@
+{
+  "id": "006",
+  "title": "Remove autonumbering from headings, tables, examples, and figures.",
+  "status": "done",
+  "priority": "high",
+  "description": "Remove all auto numbering. Table, figure, and example title should be followed by a colon.",
+  "success_criteria": [
+    "No numbers preceding headings.",
+    "No numbers immediately following table, figure, or example titles.",
+    "Table, figure, and example titles are followed by a colon."
+  ],
+  "notes": "Completed. Section heading numbers were removed from headings and TOC labels, and Table/Figure/Example titles now use the label-with-colon form without numeric ids."
+}

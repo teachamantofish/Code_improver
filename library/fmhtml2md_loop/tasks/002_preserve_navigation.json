@@ -1,0 +1,13 @@
+{
+  "id": "002",
+  "title": "Preserve Navigation Pages",
+  "status": "pending",
+  "priority": "high",
+  "description": "Preserve the TOC, list of tables, and list of figures where present.",
+  "success_criteria": [
+    "TOC is preserved",
+    "List of tables is preserved where present",
+    "List of figures is preserved where present"
+  ],
+  "notes": ""
+}
