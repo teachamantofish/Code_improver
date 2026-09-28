@@ -1,20 +1,18 @@
 ---
+id: C:/GIT/topomorph/apps/code_improver/release_notes.md
 type: reference
-title: release_notes reference
+title: code_improver change list
+name: code_improver-change-list
 description: ''
-resource: /harness-root/apps/code_improver/release_notes.md
-tags:
-- harness-root
-- apps
-- code-improver
+resource: /topomorph/apps/code_improver/release_notes.md
+resource_root: C:/GIT
 author: brogers
-generated:
-  by: human:brogers
-  at: '2026-08-15T22:43:49-04:00'
-memory: null
-domain: null
+tags: [topomorph, apps, code-improver]
+domain: tools
+tokens: 10
+generated: {by: 'human:brogers', at: '2026-08-15T22:43:49-04:00'}
+okf_version: '0.2'
 ---
-
 # Release Notes
 
 ## Changes

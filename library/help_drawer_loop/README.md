@@ -1,3 +1,18 @@
+---
+id: C:/GIT/topomorph/apps/code_improver/library/help_drawer_loop/README.md
+type: project-readme
+title: help_drawer_loop readme
+name: help_drawer_loop-readme
+description: Read <root>/readme.md. This project uses a universal improvement plan-"autoresearch-like" loop strategy to fix issues. The loop identifies the problem, fixes the problems one at a time, adds a binary eval, and loops until the eval passes. Then it moves to the next test. The goal is to create better code with each pass *without stopping* and continually add eval tests whenever a problem is found and fixed.
+resource: /topomorph/apps/code_improver/library/help_drawer_loop/README.md
+resource_root: C:/GIT
+author: brogers
+tags: [topomorph, apps, code-improver, help-drawer-loop]
+domain: tools
+tokens: 2302
+generated: {by: 'human:brogers', at: '2026-09-10T14:43:16-04:00'}
+okf_version: '0.2'
+---
 # Code Improvement Framework
 
 Read <root>/readme.md. This project uses a universal improvement plan-"autoresearch-like" loop strategy to fix issues. The loop identifies the problem, fixes the problems one at a time, adds a binary eval, and loops until the eval passes. Then it moves to the next test. The goal is to create better code with each pass *without stopping* and continually add eval tests whenever a problem is found and fixed. 

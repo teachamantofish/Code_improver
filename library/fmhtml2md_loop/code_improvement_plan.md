@@ -1,3 +1,18 @@
+---
+id: C:/GIT/topomorph/apps/code_improver/library/fmhtml2md_loop/code_improvement_plan.md
+type: plan
+title: Fmhtml2Md Loop
+name: code_improvement_plan
+description: 'Starter prompt:  This project uses a universal improvement plan outlined in trainingplan.md. I''m using an "autoresearch-like" loop strategy to fix issues. The loop identifies the problem, fixes the problems one at a time, adds a binary eval, and loops until the eval passes. Then it moves to the next test. The goal is to create better code with each pass and continually add eval tests whenever a problem is found and fixed.'
+resource: /topomorph/apps/code_improver/library/fmhtml2md_loop/code_improvement_plan.md
+resource_root: C:/GIT
+author: brogers
+tags: [topomorph, apps, code-improver, fmhtml2md-loop]
+domain: tools
+tokens: 1624
+generated: {by: 'human:brogers', at: '2026-09-10T14:43:16-04:00'}
+okf_version: '0.2'
+---
 # Universal Improvement Framework Plan
 
 Starter prompt:  This project uses a universal improvement plan outlined in trainingplan.md. I'm using an "autoresearch-like" loop strategy to fix issues. The loop identifies the problem, fixes the problems one at a time, adds a binary eval, and loops until the eval passes. Then it moves to the next test. The goal is to create better code with each pass and continually add eval tests whenever a problem is found and fixed.

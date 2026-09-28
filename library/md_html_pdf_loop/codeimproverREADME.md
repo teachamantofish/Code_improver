@@ -1,3 +1,18 @@
+---
+id: C:/GIT/topomorph/apps/code_improver/library/md_html_pdf_loop/codeimproverREADME.md
+type: reference
+title: codeimproverREADME
+name: codeimproverREADME
+description: Read <root>/codeimproverREADME.md. This project uses a universal improvement plan-"autoresearch-like" loop strategy to fix issues. The loop identifies the problem, fixes the problems one at a time, adds a binary eval, and loops until the eval passes. Then it moves to the next test. The goal is to create better code with each pass *without stopping* and continually add eval tests whenever a problem is found and fixed.
+resource: /topomorph/apps/code_improver/library/md_html_pdf_loop/codeimproverREADME.md
+resource_root: C:/GIT
+author: brogers
+tags: [topomorph, apps, code-improver, md-html-pdf-loop]
+domain: tools
+tokens: 3484
+generated: {by: 'human:brogers', at: '2026-09-10T14:43:16-04:00'}
+okf_version: '0.2'
+---
 # Code Improvement Framework
 
 Read <root>/codeimproverREADME.md. This project uses a universal improvement plan-"autoresearch-like" loop strategy to fix issues. The loop identifies the problem, fixes the problems one at a time, adds a binary eval, and loops until the eval passes. Then it moves to the next test. The goal is to create better code with each pass *without stopping* and continually add eval tests whenever a problem is found and fixed. 

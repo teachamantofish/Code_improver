@@ -1,3 +1,18 @@
+---
+id: C:/GIT/topomorph/apps/code_improver/library/fmhtml2md_loop/README.md
+type: project-readme
+title: fmhtml2md_loop readme
+name: fmhtml2md_loop-readme
+description: This directory contains a generic, project-local framework for iterative code improvement.
+resource: /topomorph/apps/code_improver/library/fmhtml2md_loop/README.md
+resource_root: C:/GIT
+author: brogers
+tags: [topomorph, apps, code-improver, fmhtml2md-loop]
+domain: tools
+tokens: 236
+generated: {by: 'human:brogers', at: '2026-09-10T14:43:16-04:00'}
+okf_version: '0.2'
+---
 # Improvement Framework
 
 This directory contains a generic, project-local framework for iterative code improvement.
